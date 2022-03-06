@@ -85,6 +85,12 @@ char __executed_checks[N_WRAP+1];
 #include "platform_avr.h"
 #elif defined (MSP430)
 #include "platform_msp430.h"
+#elif defined (__MICROBLAZE__)
+#if defined (__PCODE__)
+#include "platform_microblaze_pcode.h"
+#else
+#error MicroBlaze only supports P-Code emulation now.
+#endif
 #else
 #include "platform_generic.h"
 #endif

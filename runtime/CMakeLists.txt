@@ -112,6 +112,7 @@ install(FILES
   custom_stdint_x86.h
   platform_avr.h
   platform_generic.h
+  platform_microblaze_pcode.h
   platform_msp430.h
   random_inc.h
   safe_abbrev.h
